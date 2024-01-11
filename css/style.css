@@ -1,0 +1,78 @@
+/* CSS Reset */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Utilities */
+
+.container{
+    max-width: 920px;
+    margin: 0 auto;
+}
+
+/* Header */
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 0 20px;
+    height: 80px;
+}
+
+h1{
+    font-size: 50px;
+    align-self: center;
+}
+
+button{
+    width: 80px;
+    height: 25px;
+    border-radius: 10px;
+    font-weight: bold;
+    align-self: center;
+}
+
+/* Main */
+main{
+    background-color: #7fffd4;
+}
+
+.grid{
+    width: 800px;
+    height: calc(100vh - 140px);
+    padding: 20px 0;
+
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.cell{
+    width: calc(100% / 10);
+    height: calc(100% / 10);
+
+    border: 1px solid black;
+    font-weight: bold;
+    font-size: 1.2rem;
+    cursor: pointer;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cell.clicked{
+    background-color: dodgerblue;
+}
+
+/* Footer */
+footer{
+    height: 60px;
+    padding: 0 20px;
+}
+
+p{
+    line-height: 60px;
+}
